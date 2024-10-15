@@ -11,28 +11,12 @@
     transition: all .2s linear;
 }
 .home{
-    background-image: url(motivation_fitness_workout_wallpaper-1920x1080.jpg);
+    background-image: url(/assets/images/motivation_fitness_workout_wallpaper-1920x1080.jpg);
 }
 .home{
     padding-bottom: 25rem;
 }
-/*
-@mixin grid($val){
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax($val, 1fe));
-    gap: 2rem;
-}
-@mixin title-text($titleText){
-    font-size: $titleText;
-    text-transform: capitalize;
-    color: $white;
-}
-@mixin graph-text($graphText){
-    font-size: $graphText;
-    line-height: 2;
-    color: $white;
-}
-*/
+
 html{
     overflow-x: hidden;
     font-size: 62%;
@@ -131,81 +115,6 @@ html{
     padding-left: 5rem;
     padding-top: 8rem;
 }
-/* media queries--------------------------------------------------------------------------------------------------*/
-/* Mobile devices (max-width: 767px) 
-@media (max-width: 767px) {
-    .header .nav {
-        display: none;
-    }
-
-    #menu-btn {
-        display: block;
-    }
-
-    .home h1 {
-        font-size: 24px;
-    }
-
-    .home h3, .home h4, .home h5 {
-        font-size: 16px;
-    }
-
-    .about .text-section {
-        text-align: center;
-    }
-
-    .about img {
-        width: 100%;
-        height: auto;
-    }
-
-    .table {
-        font-size: 12px;
-    }
-
-    .schedule .nav-tabs .nav-link {
-        font-size: 14px;
-    }
-
-    .container, .container-fluid {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-}
-
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .home h1 {
-        font-size: 32px;
-    }
-
-    .home h3, .home h4, .home h5 {
-        font-size: 20px;
-    }
-
-    .about .text-section {
-        text-align: center;
-    }
-
-    .about img {
-        width: 100%;
-        height: auto;
-    }
-
-    .table {
-        font-size: 14px;
-    }
-
-    .schedule .nav-tabs .nav-link {
-        font-size: 16px;
-    }
-
-    .container, .container-fluid {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-}
-
 
 -----------------------------------------------------------------------------------*/
 .about{
@@ -283,7 +192,7 @@ html{
     .container {
     margin-top: 20px;
     }
-    background-image: linear-gradient(black, rgb(191, 191, 191));
+    background-image: linear-gradient(black, rgb(255, 255, 255));
 .section-heading{
     font-size: 3rem;
     color: rgb(234, 39, 39);
@@ -578,9 +487,20 @@ html{
       padding-right: 1rem;
       padding-top: 5rem;
     }
-  
+    .about .text-section{
+        margin-bottom: 4rem;
+    }
+    .schedule .section-heading{
+        margin-top: 9rem;
+    }
     .schedule .nav-tabs .nav-link {
       font-size: 12px;
+    }
+    .schedule{
+        margin-bottom: 30rem;
+    }
+    .pricing{
+        margin-top: 4rem;
     }
   }
   
@@ -615,6 +535,7 @@ html{
   
     .about .text-section {
       text-align: center;
+      padding-bottom: 5rem;
     }
   
     .schedule .nav-tabs .nav-link {
@@ -671,3 +592,16 @@ html{
     }
 }
 /*Menu button added*/
+
+/*------------------------------------------------------------------------------------------------*/
+
+.pricing{
+    background-color: linear-gradient(black, rgb(191, 191, 191));
+}
+.pricing .planhead{
+    font-weight: 900;
+    color: rgb(234, 39, 39);
+    font-family: "Teko", sans-serif;
+    font-stretch: extra-expanded;
+    padding-bottom: 2rem;
+}
